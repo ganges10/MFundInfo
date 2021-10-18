@@ -1,0 +1,23 @@
+{
+  "name": "mfundinfo",
+  "version": "1.0.0",
+  "description": "Extracting mutual fund information",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ganges10/MFundInfo.git"
+  },
+  "author": "Ganga",
+  "license": "ISC",
+  "type":"module",
+  "bugs": {
+    "url": "https://github.com/ganges10/MFundInfo/issues"
+  },
+  "homepage": "https://github.com/ganges10/MFundInfo#readme",
+  "dependencies": {
+    "node-fetch": "^3.0.0"
+  }
+}
