@@ -1,10 +1,11 @@
 import mFund from "./index.js";
-/*mFund.mfundDetail("119551").then(obj => {  
-    console.log(obj)
-}).catch(err => {
-    console.log(err)
-})*/
+
+
 let nav = new mFund()
-nav.fundHistory("119551").then(obj =>{
+
+//testing the fundHistory feature
+//If valid scheme code given returns the historical data
+//If invalid scheme code or no scheme code is mentioned it shows error message
+nav.fundHistory("108272").then(obj =>{
     console.log(obj)
 })
