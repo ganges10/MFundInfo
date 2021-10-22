@@ -3,9 +3,30 @@ import mFund from "./index.js";
 
 let nav = new mFund()
 
-//testing the fundHistory feature
-//If valid scheme code given returns the historical data
-//If invalid scheme code or no scheme code is mentioned it shows error message
-nav.fundHistory("108272").then(obj =>{
+/*
+nav.getSchemeCode("ICICI Prudential Floating Interest Fund Plan C - Dividend Daily").then(obj=>{
     console.log(obj)
 })
+*/
+
+/*
+nav.getAllFundFamilies().then(obj=>{
+    console.log(obj)
+})
+*/
+
+/*
+nav.getCategoryBySchemeType(1).then(obj=>{
+    console.log(obj)
+})
+*/
+
+/*
+nav.fetchNAVbyCode("01-Jan-2015","108272").then(obj=>{
+    console.log(obj)
+})
+
+/*
+nav.latestNav("108272").then(obj=>{
+    console.log(obj)
+})*/
