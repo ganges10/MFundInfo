@@ -1,6 +1,6 @@
 {
   "name": "mfundinfo",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Extracting mutual fund information",
   "main": "index.js",
   "scripts": {
