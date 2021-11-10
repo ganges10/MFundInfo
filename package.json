@@ -12,12 +12,18 @@
   },
   "author": "Ganga",
   "license": "ISC",
-  "type":"module",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/ganges10/MFundInfo/issues"
   },
   "homepage": "https://github.com/ganges10/MFundInfo#readme",
   "dependencies": {
     "node-fetch": "^3.0.0"
-  }
+  },
+  "devDependencies": {},
+  "keywords": [
+    "Mutual",
+    "Fund",
+    "India"
+  ]
 }

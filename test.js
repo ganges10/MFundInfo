@@ -3,11 +3,10 @@ import mFund from "./index.js";
 
 let nav = new mFund()
 
-/*
 nav.getSchemeCode("ICICI Prudential Floating Interest Fund Plan C - Dividend Daily").then(obj=>{
     console.log(obj)
 })
-*/
+
 
 /*
 nav.getAllFundFamilies().then(obj=>{
