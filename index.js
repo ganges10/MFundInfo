@@ -48,7 +48,11 @@ class Mfund{
             default:
                 scheme="All"
         }
-        let result = await this.getData(`https://latest-mutual-fund-nav.p.rapidapi.com/fetchSchemeCategoriesBySchemeType?SchemeType=${scheme}`)
+        let data = await this.getData(`https://latest-mutual-fund-nav.p.rapidapi.com/fetchSchemeCategoriesBySchemeType?SchemeType=${scheme}`)
+        let result=[]
+        for(let i=0;i<data.length;i++){
+            result[i]=data[i].substring(data[i].indexOf('(')+1,data[i].indexOf(')'))
+        }
         return result;   
     }
 
@@ -84,6 +88,27 @@ class Mfund{
             return "Invalid Scheme Code";
         }
         return {"Scheme Name": data[0]['Scheme Name'],"NAV":data[0]['Net Asset Value'],"Scheme Type":data[0]['Scheme Type']}
+    }
+
+    fundCalculator(itype,pr,rate,years){
+        let futureVal=0;
+        if(itype == "LS"){
+            futureVal = pr * (1 + rate/100)**years
+        }
+        else if(itype == "SIP"){
+            let i = rate/100/12
+            let n= years *12
+            futureVal = pr *((1+i)**n-1)/i * (i+1)
+        }
+        else return "Invalid Investment Type!"
+
+        return Math.round(futureVal);
+    }
+    goalSIPCalculator(goal,rate,years){
+        let i = rate/100/12
+        let n = years*12
+        let monthlySIP = goal/(((1+i)**n-1)/i * (i+1))
+        return Math.round(monthlySIP);
     }
 }
 
