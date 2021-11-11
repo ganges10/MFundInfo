@@ -20,6 +20,9 @@ MfundInfo is a package that lets you retrieve mutual fund related data.
 *  ```fundCalculator(itype,pr,rate,years)``` takes in the type of investement which can be specified as <i>LS</i> for lumpsum investement or <i>SIP</i> in case of Systematic Investement Plan. Along with the type, the amount invested, rate of returns expected and furation have to be specified. The output is an approximation of the expected future value and totally depends on the market values.
 * ```goalSIPCalculator(goal,rate,years)``` helps provide an approximate monthly investement amount to attain a goal amount with an expected rate of returns and the duration for which user is willing to invest. The output is an approximation and may vary depending on the market value.
 
+
+<b>Credits :</b> Rapid Api has been used for fetching mutual fund related data.
+
 ## Example
 ~~~~{.html}
 import mFund from mfundinfo;
